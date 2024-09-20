@@ -1,0 +1,26 @@
+PRINT
+ADD pool1 schema1 collection1 1 1 Ivan 123.12
+ADD pool1 schema2 collection1 10 10 Yuri 100.01
+ADD pool2 schema1 collection3 20 20 Max 23.12
+ADD pool2 schema1 collection3 20 20 Alex 55.12
+ADD pool1 schema1 collection1 5 5 Kate 11.12
+ADD pool1 schema1 collection2 66 66 Max 34.12
+ADD pool1 schema1 collection2 77 77 Vika 59.12
+ADD pool1 schema1 collection2 88 88 Vera 100
+PRINT
+GET pool1 schema1 collection2 50 80
+GET pool1 schema1 collection2 66
+SAVE db_test_1.txt
+PRINT
+DELETE pool1 schema1 collection2 77
+PRINT
+DELETE pool1 schema1 collection2
+PRINT
+DELETE pool2 schema1
+PRINT
+DELETE pool4
+PRINT
+DELETE pool1
+PRINT
+LOAD db_test_1.txt
+PRINT

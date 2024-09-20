@@ -1,0 +1,49 @@
+' Печать пустой коллекции
+PRINT
+
+' Добавление 6 значений
+ADD pool1 schema1 collection1 1 1 Ivan 123.12
+ADD pool1 schema2 collection1 10 10 Yuri 100.01
+ADD pool2 schema1 collection3 20 20 Max 23.12
+' Обновление значения (одинаковый ключ 20)
+ADD pool2 schema1 collection3 20 20 Alex 55.12
+ADD pool1 schema1 collection1 5 5 Kate 11.12
+ADD pool1 schema1 collection2 66 66 Max 34.12
+ADD pool1 schema1 collection2 77 77 Vika 59.12
+ADD pool1 schema1 collection2 88 88 Vera 100
+
+PRINT
+
+' Получить список объектов с ключом [50; 80]
+GET pool1 schema1 collection2 50 80
+
+' Получить объект по ключу 66
+GET pool1 schema1 collection2 66
+
+' Сохранить результат в файл
+SAVE db_test_1.txt
+PRINT
+
+' Удалить из пула, схемы, коллекции объект с ключом 77
+DELETE pool1 schema1 collection2 77
+PRINT
+
+' Удалить из пула, схемы коллекцию
+DELETE pool1 schema1 collection2
+PRINT
+
+' Удалить из пула схему
+DELETE pool2 schema1
+PRINT
+
+' Удалить пул (не существующий)
+DELETE pool4
+PRINT
+
+' Удалить пул (существующий)
+DELETE pool1
+PRINT
+
+' Загрузить из файла
+LOAD db_test_1.txt
+PRINT

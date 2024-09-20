@@ -1,0 +1,7 @@
+pool1,schema1,collection1,1,1,Ivan,123.12,
+pool1,schema1,collection1,5,5,Kate,11.12,
+pool1,schema1,collection2,66,66,Max,34.12,
+pool1,schema1,collection2,77,77,Vika,59.12,
+pool1,schema1,collection2,88,88,Vera,100,
+pool1,schema2,collection1,10,10,Yuri,100.01,
+pool2,schema1,collection3,20,20,Alex,55.12,
